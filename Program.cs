@@ -18,6 +18,7 @@ class Program
            .ConfigureAppConfiguration((hostingContext, config) =>
            {
               config.AddJsonFile("appsettings.json", optional: true);
+              config.AddJsonFile("appsettings.Development.json", optional: false);
            })
            .ConfigureServices((context, services) =>
            {

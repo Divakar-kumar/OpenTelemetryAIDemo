@@ -16,8 +16,6 @@
 # Mono auto generated files
 mono_crash.*
 
-/appsettings.Development.*
-
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -350,3 +348,4 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/appsettings.Development.json
