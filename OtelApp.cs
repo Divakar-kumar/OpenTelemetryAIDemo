@@ -74,6 +74,15 @@ namespace OpenTelemetryAIDemo
                      }
                      Console.ResetColor();
                   }
+                  else if (options[selectedIndex].Contains("Quit"))
+                  {
+                     Console.WriteLine("\n❌ Exiting the application...");
+                     return;
+                  }
+                  else if (string.IsNullOrWhiteSpace(options[selectedIndex]))
+                  {
+                     Console.WriteLine("\n⚠️ Invalid selection. Please try again.");
+                  }
                   else
                   {
                      var module = _moduleFactory.GetModule(selectedIndex);
